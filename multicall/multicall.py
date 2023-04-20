@@ -200,7 +200,7 @@ def _raise_or_proceed(e: Exception, ct_calls: int, ConnErr_retries: int) -> None
     elif isinstance(e, ValueError):
         if 'out of gas' not in str(e).lower():
             raise e
-        if ct_calls == 12:
+        if ct_calls == 1:
             raise e
         logger.warning(e)
     else:
