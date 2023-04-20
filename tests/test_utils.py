@@ -21,7 +21,7 @@ def exception_coro():
 
 
 def test_chain_id():
-    assert chain_id(web3) == 1
+    assert chain_id(web3) == 12
 
 def test_await_awaitable():
     assert await_awaitable(coro()) == None
@@ -55,13 +55,13 @@ def test_get_async_w3_with_sync():
     w3 = get_async_w3(web3)
     assert w3.eth.is_async
     assert isinstance(w3.provider, AsyncBaseProvider)
-    assert await_awaitable(w3.eth.chain_id) == 1
+    assert await_awaitable(w3.eth.chain_id) == 421613
 
 def test_get_async_w3_with_async():
     async_w3 = get_async_w3(web3)
     w3 = get_async_w3(async_w3)
     assert w3 == async_w3
-    assert await_awaitable(w3.eth.chain_id) == 1
+    assert await_awaitable(w3.eth.chain_id) == 421613
 
 def test_run_in_subprocess():
     assert await_awaitable(run_in_subprocess(work)) == None

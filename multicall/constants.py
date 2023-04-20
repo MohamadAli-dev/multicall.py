@@ -23,7 +23,7 @@ class Network(IntEnum):
     Mainnet = 1
     Kovan = 42
     Rinkeby = 4
-    Görli = 5
+    # Görli = 5
     Gnosis = 100
     Polygon = 137
     Bsc = 56
@@ -31,7 +31,7 @@ class Network(IntEnum):
     Heco = 128
     Harmony = 1666600000
     Arbitrum = 42161
-    # ArbitrumGoerli = 421613
+    Goerli = 421613
     Avax = 43114
     Moonriver = 1285
     Aurora = 1313161554
@@ -45,7 +45,7 @@ MULTICALL_ADDRESSES: Dict[int,str] = {
     Network.Mainnet: '0xeefBa1e63905eF1D7ACbA5a8513c70307C1cE441',
     Network.Kovan: '0x2cc8688C5f75E365aaEEb4ea8D6a480405A48D2A',
     Network.Rinkeby: '0x42Ad527de7d4e9d9d011aC45B31D8551f8Fe9821',
-    Network.Görli: '0x77dCa2C955b15e9dE4dbBCf1246B4B85b651e50e',
+    # Network.Görli: '0x77dCa2C955b15e9dE4dbBCf1246B4B85b651e50e',
     Network.Gnosis: '0xb5b692a88BDFc81ca69dcB1d924f59f0413A602a',
     Network.Polygon: '0x95028E5B8a734bb7E2071F96De89BABe75be9C8E',
     Network.Bsc: '0x1Ee38d535d541c55C9dae27B12edf090C608E6Fb',
@@ -64,7 +64,7 @@ MULTICALL2_ADDRESSES: Dict[int,str] = {
     Network.Mainnet: '0x5ba1e12693dc8f9c48aad8770482f4739beed696',
     Network.Kovan: '0x5ba1e12693dc8f9c48aad8770482f4739beed696',
     Network.Rinkeby: '0x5ba1e12693dc8f9c48aad8770482f4739beed696',
-    Network.Görli: '0x5ba1e12693dc8f9c48aad8770482f4739beed696',
+    # Network.Görli: '0x5ba1e12693dc8f9c48aad8770482f4739beed696',
     Network.Gnosis: '0x9903f30c1469d8A2f415D4E8184C93BD26992573',
     Network.Polygon: '0xc8E51042792d7405184DfCa245F2d27B94D013b6',
     Network.Bsc: '0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B',
@@ -78,7 +78,7 @@ MULTICALL2_ADDRESSES: Dict[int,str] = {
     Network.Optimism: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
     Network.OptimismKovan: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
     Network.Kava: '0x30A62aA52Fa099C4B227869EB6aeaDEda054d121',
-    # Network.ArbitrumGoerli: '0x8A0EC61Ba47428D16F7D257D2266A6507F671982',
+    Network.Goerli: '0x8A0EC61Ba47428D16F7D257D2266A6507F671982',
 }
 
 # With default AsyncBaseProvider settings, some dense calls will fail
