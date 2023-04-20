@@ -31,7 +31,7 @@ class Network(IntEnum):
     Heco = 128
     Harmony = 1666600000
     Arbitrum = 42161
-    Goerli = 421613
+    ArbitrumGoerli = 421613
     Avax = 43114
     Moonriver = 1285
     Aurora = 1313161554
@@ -57,7 +57,7 @@ MULTICALL_ADDRESSES: Dict[int,str] = {
     Network.OptimismKovan: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
     Network.Kava: '0x7ED7bBd8C454a1B0D9EdD939c45a81A03c20131C',
     Network.KavaTestnet: '0x1Af096bFA8e495c2F5Eeb56141E7E2420066Cf78',
-    # Network.ArbitrumGoerli: '0x8A0EC61Ba47428D16F7D257D2266A6507F671982',
+    Network.ArbitrumGoerli: '0x8A0EC61Ba47428D16F7D257D2266A6507F671982',
 }
 
 MULTICALL2_ADDRESSES: Dict[int,str] = {
@@ -78,7 +78,7 @@ MULTICALL2_ADDRESSES: Dict[int,str] = {
     Network.Optimism: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
     Network.OptimismKovan: '0x2DC0E2aa608532Da689e89e237dF582B783E552C',
     Network.Kava: '0x30A62aA52Fa099C4B227869EB6aeaDEda054d121',
-    Network.Goerli: '0x8A0EC61Ba47428D16F7D257D2266A6507F671982',
+    Network.ArbitrumGoerli: '0x8A0EC61Ba47428D16F7D257D2266A6507F671982',
 }
 
 # With default AsyncBaseProvider settings, some dense calls will fail
