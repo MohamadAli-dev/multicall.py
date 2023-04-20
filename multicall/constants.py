@@ -31,7 +31,7 @@ class Network(IntEnum):
     Heco = 128
     Harmony = 1666600000
     Arbitrum = 42161
-    ArbitrumTestnet = 421613
+    ArbitrumGoerli = 421613
     Avax = 43114
     Moonriver = 1285
     Aurora = 1313161554
